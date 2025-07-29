@@ -1,4 +1,5 @@
 
+
 pipeline {
     agent any
 
@@ -9,11 +10,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/rajesh20032003/calcu.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
