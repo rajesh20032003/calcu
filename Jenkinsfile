@@ -6,12 +6,13 @@ pipeline {
     environment {
         IMAGE_NAME = "calculator"
         CONTAINER_NAME = "calc-app"
-        PORT = "8080"
+        PORT = "9090"
     }
 
     stages {
 
-        stage('Build Docker Image') {
+        
+stage('Build Docker Image') {
             steps {
                 script {
                     sh "docker build -t $IMAGE_NAME ."
